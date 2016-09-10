@@ -1,0 +1,5 @@
+Django==1.10.1
+oauthlib==2.0.0
+requests==2.11.1
+requests-oauthlib==0.6.2
+twython==3.4.0

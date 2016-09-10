@@ -1,0 +1,4 @@
+*secret.py
+*.pyc
+*.sqlite3
+*plotenv/*
