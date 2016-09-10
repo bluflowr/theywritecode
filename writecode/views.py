@@ -1,26 +1,8 @@
 from django.shortcuts import render
 
-# from .models import Coder, Descriptor, Phrase
 from .models import Word
 from secret import top_range, mid_range
 import random
-
-# def new_plot(request):
-#     rand_coder_ids = random.sample(range(1, Coder.objects.count()+1), 2)
-#     rand_adj_ids = random.sample(range(1, Descriptor.objects.count()+1), 4)
-#     rand_phrase_ids = random.sample(range(1, Phrase.objects.count()+1), 2)
-#     coders = list(Coder.objects.filter(id__in=(rand_coder_ids)))
-#     adjs = list(Descriptor.objects.filter(id__in=(rand_adj_ids)))
-#     phrases = list(Phrase.objects.filter(id__in=(rand_phrase_ids)))
-#     article1 = 'a' if adjs[0].vowel == False else 'an'
-#     article2 = 'a' if adjs[2].vowel == False else 'an'
-#     sentence = (
-#         coders[0].pronoun + " " + article1 + " " + adjs[0].adjective + " " + 
-#         adjs[1].adjective + " " + coders[0].coder_type + " " + phrases[0].phrase + ". " + 
-#         coders[1].pronoun + " " + article2 + " " + adjs[2].adjective + " " + 
-#         adjs[3].adjective + " " + coders[1].coder_type + " " + phrases[1].phrase + ". They write code!"
-#     )    
-#     return render(request, 'index.html', {'sentence' : sentence})
 
 def pronoun(number):
     if number >= top_range:
