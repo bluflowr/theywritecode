@@ -6,41 +6,39 @@
             They Write Code!
         </title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    {% load bootstrap3 %}
-    {% bootstrap_css %}
-    {% bootstrap_javascript %}
-    <style>
-.vertical-center{
-  min-height: 70%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 70vh; /* These two lines are counted as one :-)       */
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-    </style>
-
+        {% load bootstrap3 %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+        <style>
+        .vertical-center{
+            min-height: 70%;  /* Fallback for browsers do NOT support vh unit */
+            min-height: 70vh; /* These two lines are counted as one :-)       */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        </style>
     </head>
+
     <body>
-
-    <div class="vertical-center">
-        <div class="col-md-8">
-        <div class="well">
-    <center><h3>{{sentence}}</h3></center>
-    <center><h2>They Write Code!</h2></center>
-    <BR/>
-    <center><a href={% url 'new_plot' %} class="btn btn-success">Show Me More Coders!</a></center>
-    <BR/>
-    </div><br />
-        <div class="well">
-        <center><p>
-        Source Code at <a href="https://github.com/bluflowr/theywritecode">github.com</a>. Words and Code by <a href="http://www.irmakramer.com">Irma Kramer</a></br> Inspired by <a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/TheyFightCrime"> They Fight Crime!</a>
-        </p>
-        </p>
-        </center>
+        <div class="vertical-center">
+            <div class="col-md-8">
+                <div class="well">
+                    <center><h3>{{sentence}}</h3></center>
+                    <center><h2>They Write Code!</h2></center>
+                    <BR/>
+                    <center><a href={% url 'new_plot' %} class="btn btn-success">Show Me More Coders!</a></center>
+                    <BR/>
+                </div>
+                <br />
+                <div class="well">
+                    <center><p>
+                    Source Code at <a href="https://github.com/bluflowr/theywritecode">github.com</a>. Words and Code by <a href="http://www.irmakramer.com">Irma Kramer</a></br> Inspired by <a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/TheyFightCrime"> They Fight Crime!</a>
+                    </p>
+                    </p>
+                    </center>
+                </div>
+            </div>
         </div>
-    </div>
-
-</div>
     </body>
 </html>
