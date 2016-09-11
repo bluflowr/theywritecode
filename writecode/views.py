@@ -32,7 +32,7 @@ def new_plot(request):
     sentence = (pronoun(rand_pronoun[0]) + article(rand_adj[0].words) + rand_adj[0].words + " " + 
         rand_adj[1].words + " " + rand_coder[0].words + " " + rand_phrase[0].words + " " + 
         pronoun(rand_pronoun[1]) + article(rand_adj[2].words) + rand_adj[2].words + " " + rand_adj[3].words +
-         " " + rand_coder[1].words + " " + rand_phrase[1].words + " They write code!")
+         " " + rand_coder[1].words + " " + rand_phrase[1].words)
     
 
     return render(request, 'index.html', {'sentence' : sentence})

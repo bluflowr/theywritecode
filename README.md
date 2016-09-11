@@ -1,5 +1,5 @@
 
-# They Write Code App
+# They Write Code Django App
 
 This project takes random identities and puts them together in funny and thought provoking ways to show how people who code come from everywhere! 
 
@@ -33,8 +33,8 @@ Included is the *requirements.txt* file that has all the resources you'll need f
 ### 4. SECRET_KEY and Credentials
 Rename `secret_example.py` to `secret.py`
 
-Go to <http://www.miniwebtool.com/django-secret-key-generator/>, create your secret key, copy it. Open your `petfinder/secret.py`, find `key` line, paste your secret key.  
-Go to [Twitter](https://dev.twitter.com/). Once created, enter your Twitter credentials.
+Go to <http://www.miniwebtool.com/django-secret-key-generator/>, create your secret key, copy it. Open `secret.py`, find `key` line, paste your secret key.  
+Go to [Twitter](https://dev.twitter.com/). Once you've created you app keys and access tokens, enter your Twitter credentials in `secret.py`.
 
 ### 5. Initialize the database
 
@@ -42,7 +42,6 @@ First set the database engine (PostgreSQL, MySQL, etc..) in your settings files;
 
     $ python manage.py migrate
     $ python manage.py makemigrations writecode
-    $ python manage.py sqlmigrate writecode
     $ python manage.py migrate
 
 
