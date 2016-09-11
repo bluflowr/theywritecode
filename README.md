@@ -20,7 +20,7 @@ Activate your virtualenv:
 `$ source projectname/bin/activate`
 
 ### 2. Download
-Now, you need the *petfinder* project files in your environment:
+Now, you need the *writecode* project files in your environment:
 
     $ cd /path/to/your/project
     $ git clone git://github.com/bluflowr/theywritecode.git projectname && cd projectname
@@ -49,5 +49,12 @@ First set the database engine (PostgreSQL, MySQL, etc..) in your settings files;
 
     $ python manage.py runserver
 
+### 7. Twitter Cron Job
+
+Create a cron job to post updates to twitter. 
+
+	$ python manage.py tweet 
+
 ## Implementation
 This site is currently live at [theywritecode.com](http://theywritecode.com/)
+There is also a cron job posting pairings to twitter twice a day! [@theywritecode](https://twitter.com/theywritecode)

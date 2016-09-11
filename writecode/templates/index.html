@@ -16,19 +16,30 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: 15px;
+        }
+        h1{
+            font-size: 3em;
+        }
+        h2{
+            font-size: 2.5em;
+            line-height: 1.5em;
+        }
+        .well p, .btn {
+            font-size: 1.5em;
         }
         </style>
     </head>
 
     <body>
         <div class="vertical-center">
-            <div class="col-md-8">
+            <div class="col-lg-10">
                 <div class="well">
-                    <center><h3>{{sentence}}</h3></center>
-                    <center><h2>They Write Code!</h2></center>
-                    <BR/>
-                    <center><a href={% url 'new_plot' %} class="btn btn-success">Show Me More Coders!</a></center>
-                    <BR/>
+                    <center><h2>{{sentence}}</h2></center>
+                    <center><h1>They Write Code!</h1></center>
+                    <br />
+                    <center><a href={% url 'new_plot' %} class="btn btn-success">Compile another!</a></center>
+                    <br />
                 </div>
                 <br />
                 <div class="well">
