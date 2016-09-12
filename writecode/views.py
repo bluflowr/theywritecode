@@ -9,7 +9,7 @@ def pronoun(number):
     if number >= top_range:
         return "He's "
     elif number >= mid_range and number < top_range:
-        return "One's "
+        return "Xe's "
     else:
         return "She's "
 
