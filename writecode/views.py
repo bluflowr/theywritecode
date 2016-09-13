@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+import urllib
 from .models import Word
 from secret import top_range, mid_range
 import random
@@ -39,6 +39,8 @@ def random_sentence(twc = ''):
 
 
 def new_plot(request):
-    sentence = random_sentence
-    return render(request, 'index.html', {'sentence' : sentence})
+    sentence = random_sentence()
+    parameters = {'text': sentence, 'via' : 'theywritecode'}
+    tweet = "https://twitter.com/intent/tweet?" + urllib.parse.urlencode(parameters)
+    return render(request, 'index.html', {'sentence' : sentence, 'tweet' : tweet})
 
