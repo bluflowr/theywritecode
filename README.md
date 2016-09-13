@@ -1,7 +1,7 @@
 
 # They Write Code Django App
 
-This project takes random identities and puts them together in funny and thought provoking ways to show how people who code come from everywhere! 
+This project takes random identities and puts them together in funny and thought provoking ways showing us that a coder can be anyone.
 
 ## APIs Used
 
