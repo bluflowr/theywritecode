@@ -2,7 +2,7 @@ from django.contrib import admin
 from django import forms
 
 # from .models import Coder, Descriptor, Phrase
-from .forms import WordAdminForm, WordAdminFormSet
+from .forms import WordAdminForm
 from .models import Word
 
 # class CoderInline(admin.TabularInline):
@@ -25,7 +25,6 @@ alias_field.short_description = 'Types'
 
 class WordAdmin(admin.ModelAdmin):
     form = WordAdminForm
-    formset = WordAdminFormSet
     list_display=('words', alias_field)
     list_filter = ['word_type']
     admin_order_field = 'word_type'
