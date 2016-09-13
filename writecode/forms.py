@@ -8,7 +8,7 @@ WORD_TYPES = (
     )
 
 class WordAdminForm(forms.ModelForm):
-    word_type = forms.ChoiceField(choices = WORD_TYPES)
+    word_type = forms.ChoiceField(widget=forms.RadioSelect, choices = WORD_TYPES)
 
     class Meta:
         model = Word
