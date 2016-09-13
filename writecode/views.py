@@ -41,6 +41,9 @@ def random_sentence(twc = ''):
 def new_plot(request):
     sentence = random_sentence()
     parameters = {'text': sentence, 'via' : 'theywritecode'}
-    tweet = "https://twitter.com/intent/tweet?" + urllib.parse.urlencode(parameters)
+    try:
+        tweet = "https://twitter.com/intent/tweet?" + urllib.parse.urlencode(parameters)
+    except AttributeError: #for Python 2
+        tweet = "https://twitter.com/intent/tweet?" + urllib.urlencode(parameters)
     return render(request, 'index.html', {'sentence' : sentence, 'tweet' : tweet})
 
